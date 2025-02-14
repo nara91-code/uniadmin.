@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bejelentkezés</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+  <canvas id="gradient-canvas"></canvas>
+  <div class="left">
+    <h1>Üdvözöljük!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Nullam eu fermentum nisi.</p>
+  </div>
+  <div class="right">
+    <h1>uniadmin</h1>
+    <div class="form-container">
+      <form id="login-form">
+        <div class="input-group">
+          <span class="icon"><i class="ph ph-user"></i></span>
+          <input type="text" id="username" placeholder="Felhasználónév">
+        </div>
+        <div class="input-group">
+          <span class="icon"><i class="ph ph-key"></i></span>
+          <input type="password" id="password" placeholder="Jelszó">
+        </div>
+        <div id="error-message" class="error-message"></div>
+        <a href="#" class="forgot-password">Elfelejtett jelszó?</a>
+        <button id="login-btn" type="submit">Bejelentkezés</button>
+      </form>
+    </div>    
+  </div>
+  <script src="script.js"></script>
+  <script src="mesh-gradient.js"></script>
+  <script>
+      new Gradient({
+          canvas: '#gradient-canvas',
+          colors: ['#330559', '#480878', '#330559', '#4989d7']
+      });
+  </script>
+</body>
+</html>
